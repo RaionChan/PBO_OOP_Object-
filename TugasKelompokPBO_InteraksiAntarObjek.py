@@ -1,5 +1,5 @@
 class Mahasiswa:
-
+  
   def __init__(self, nama, nim, jurusan, alamat):
     self.nama = nama
     self.nim = nim
@@ -14,7 +14,7 @@ class Mahasiswa:
     print(f"NIM: {self.nim}")
     print(f"Jurusan: {self.jurusan}")
     print(f"Alamat: {self.alamat.tampilkan_info()}") 
-    print(f"Mata Kuliah: {self.matkul}")
+    print(f"Mata Kuliah: {self.matkul.nama}")
 
 class Dosen:
 
@@ -87,13 +87,15 @@ matkul2 = Matkul("Algoritma dan Pemrograman", "IF124", 4)
 dosen1 = Dosen("Pak Puput", "12", "Teknik Informatika", matkul1)
 dosen2 = Dosen("Pak Xavier", "13", "Teknik Informatika", matkul2)
 
-mahasiswa1.ambilmatkul(matkul1)
-mahasiswa2.ambilmatkul(matkul2)
-mahasiswa3.ambilmatkul(matkul1)
+mahasiswa1.ambilmatkul(matkul1)  
+mahasiswa2.ambilmatkul(matkul2)  
+mahasiswa3.ambilmatkul(matkul1) 
 
 dosen1.mengajar(mahasiswa1)
 dosen2.mengajar(mahasiswa2)
 
+
+print ("")
 print ("Daftar Mahasiswa")
 print ("================")
 print ("")
