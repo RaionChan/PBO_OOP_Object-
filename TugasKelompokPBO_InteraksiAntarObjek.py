@@ -1,8 +1,8 @@
 class Mahasiswa:
   
-  def __init__(self, nama, nim, jurusan, alamat):
+  def __init__(self, nama, npm, jurusan, alamat):
     self.nama = nama
-    self.nim = nim
+    self.npm = npm
     self.jurusan = jurusan
     self.alamat = alamat
 
@@ -11,7 +11,7 @@ class Mahasiswa:
 
   def tampilkan_info(self):
     print(f"Nama: {self.nama}")
-    print(f"NIM: {self.nim}")
+    print(f"npm: {self.npm}")
     print(f"Jurusan: {self.jurusan}")
     print(f"Alamat: {self.alamat.tampilkan_info()}") 
     print(f"Mata Kuliah: {self.matkul.nama}")
