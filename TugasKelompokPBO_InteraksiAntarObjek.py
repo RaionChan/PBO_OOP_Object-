@@ -55,12 +55,6 @@ class Alamat:
   def tampilkan_info(self):
     return f"{self.jalan}, {self.kota}, {self.provinsi}" 
 
-class Universitas:
-
-  def __init__(self, nama):
-    self.nama = nama
-    self.mahasiswa = []
-    self.dosen = []
 
   def daftarkan_mahasiswa(self, mahasiswa):
     self.mahasiswa.append(mahasiswa)
